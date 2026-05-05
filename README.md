@@ -47,4 +47,4 @@ If you find TECCI useful in your research, please cite our paper:
 
 ## License
 
-This project is licensed under the Apache 2.0 License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the CC BY 4.0 License. See the [LICENSE](LICENSE) file for details.
