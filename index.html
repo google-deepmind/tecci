@@ -41,13 +41,6 @@
           <sup>1</sup>Google
         </div>
         <div class="button-bar">
-          <a href="./viz.html?&c=" target="_blank">
-            <span class="button"
-              ><span class="button-wrapper"
-                ><i class="fa fa-magnifying-glass"></i> Explore</span
-              ></span
-            ></a
-          >
           <a href="#downloads">
             <span class="button"
               ><span class="button-wrapper"><i class="fa fa-download"></i> Downloads</span></span
@@ -165,7 +158,34 @@
       </div>
       <hr class="separator" />
       <h2>Benchmarking Image Editing Models on TECCI</h2>
-      <img style="margin: 20px 0" src="web-data/fig2.png" />
+      <div class="center block">
+        <p class="justify">
+        <b>Models Evaluated</b>: We evaluate the performance of several state-of-the-art image generation models, 
+          <em>Nano Banana 2</em>, <em>Nano Banana Pro</em>, <em>Grok Imagine Pro</em>, <em>Seedream 5.0 Lite</em> and <em>GPT Image 1.5</em>, using TECCI.
+        <b>Evaluation Criteria</b>
+        <ol>
+          <li>
+            <strong>Instruction Following (IF):</strong>
+            <p>Assesses the semantic alignment between the edit instruction and the resulting edited image.</p>
+          </li>
+          <li>
+            <strong>Image Consistency (IC):</strong>
+            <p>Evaluates the preservation of the original image’s identity and non-targeted regions and elements.</p>
+          </li>
+          <li>
+            <strong>Visual Quality (VQ):</strong>
+            <p>Captures the aesthetic and technical excellence of the edit, identifying any introduced artifacts such as blurring, pixelation, or unnatural blending.</p>
+          </li>
+        </ol>
+        </p>
+        <img style="margin: 20px 0" src="web-data/fig2.png" />
+        <p class="justify">
+        </p>
+        <img style="margin: 20px 0" src="web-data/table1.png" />
+        <p class="justify">
+        </p>
+        <img style="margin: 20px 0" src="web-data/table2.png" />
+      </div>
       <hr class="separator" />
       <h2 id="downloads">Downloads</h2>
       <div class="center block last">
