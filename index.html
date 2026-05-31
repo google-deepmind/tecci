@@ -46,11 +46,11 @@
               ><span class="button-wrapper"><i class="fa fa-download"></i> Downloads</span></span
             ></a
           >
-          <a href="TODO_PDF_LINK" target="_blank"
+          <!--<a href="TODO_PDF_LINK" target="_blank"
             ><span class="button"
               ><span class="button-wrapper"><i class="fa fa-file-pdf"></i> PDF</span></span
             ></a
-          >
+          > -->
           <a href="TODO_ARXIV_LINK" target="_blank"
             ><span class="button"
               ><span class="button-wrapper"
@@ -161,36 +161,41 @@
       <div class="center block">
         <p class="justify">
         <b>Models Evaluated</b>: We evaluate the performance of several state-of-the-art image generation models, 
-        <em>Nano Banana 2</em>, <em>Nano Banana Pro</em>, <em>Grok Imagine Pro</em>, <em>Seedream 5.0 Lite</em> and <em>GPT Image 1.5</em>, using TECCI.<br><br>
+        <em>Nano Banana 2</em>, <em>Nano Banana Pro</em>, <em>Grok Imagine Pro</em>, <em>Seedream 5.0 Lite</em> and <em>GPT Image 1.5</em>, using TECCI. 
+          Representative samples are shown in the figure below.<br><br>
         <b>Evaluation Criteria</b>: The quality of instruction-based image editing is inherently multi-dimensional and subjective, so we defined granular scoring guidelines.
         <ol style="text-align: left; padding-left: 20px;">
           <li>
             <strong>Instruction Following (IF):</strong>
-            <p>Assesses the semantic alignment between the edit instruction and the resulting edited image. It measures whether the generative model accurately and completely fulfilled all the required modifications, serving as the primary benchmark for the system’s functional utility.</p>
+            <p>Assesses the semantic alignment between the edit instruction and the resulting edited image. It measures whether the generative model accurately 
+              and completely fulfilled all the required modifications, serving as the primary benchmark for the system’s functional utility.</p>
           </li>
           <li>
             <strong>Image Consistency (IC):</strong>
-            <p>Evaluates the preservation of the original image’s identity and non-targeted regions and elements. This criterion penalizes "over-editing" or unrequested alterations to the background and perspective, ensuring the edit is minimal.</p>
+            <p>Evaluates the preservation of the original image’s identity and non-targeted regions and elements. This criterion penalizes "over-editing" 
+              or unrequested alterations to the background and perspective, ensuring the edit is minimal.</p>
           </li>
           <li>
             <strong>Visual Quality (VQ):</strong>
-            <p>Captures the aesthetic and technical excellence of the edit, identifying any introduced artifacts such as blurring, pixelation, or unnatural blending. It determines if the modifications are seamlessly integrated to maintain a realistic, high-resolution appearance.</p>
+            <p>Captures the aesthetic and technical excellence of the edit, identifying any introduced artifacts such as blurring, pixelation, or unnatural blending. 
+              It determines if the modifications are seamlessly integrated to maintain a realistic, high-resolution appearance.</p>
           </li>
         </ol>
         </p>
+        <img style="margin: 20px 0" src="web-data/table2.png" />
         <p class="justify">
-          <b>Human Evaluation on a subset of TECCI</b>: We report the overall success rate alongside the per-criterion success rates. The low \overall scores across the model suite highlight the inherent difficulty of \dataset. Even the most capable models struggle to exceed a 22.3 overall success rate. IRCS stands out as a significantly more challenging subset.
+          <b>Human Evaluation on a subset of TECCI</b>: We report the overall success rate alongside the per-criterion success rates. The low \overall scores 
+          across the model suite highlight the inherent difficulty of \dataset. Even the most capable models struggle to exceed a 22.3 overall success rate. 
+          IRCS stands out as a significantly more challenging subset.
         </p>
         <img style="margin: 20px 0" src="web-data/table1.png" />
         <p class="justify">
-          Although human evaluation serves as the gold standard for assessing visual quality, it is bottlenecked by scalability constraints and inherent rater subjectivity. To overcome these limitations, we propose an MLLM-based automatic evaluation 
-          framework that enables streamlined and reproducible benchmarking on the TECCI dataset.  The autorater processes the source image, the edit instruction, and the resulting edited image. We prompt the model to perform a rigorous, systematic 
-          analysis of the visual output, independently rating each of the three evaluation criteria on a 1–5 Likert scale. The observed trends largely align with the human evaluation.
+          <b>Automatic Evaluation on the Full set of TECCI</b>: We propose an MLLM-based automatic evaluation framework that enables streamlined and reproducible 
+          benchmarking on the TECCI dataset. The autorater processes the source image, the edit instruction, and the resulting edited image. We prompt the model 
+          to perform a rigorous, systematic analysis of the visual output, independently rating each of the three evaluation criteria on a 1–5 Likert scale. 
+          The observed trends largely align with the human evaluation.
         </p>
-        <img style="margin: 20px 0" src="web-data/table2.png" />
-        <p class="justify">
-        </p>
-        <img style="margin: 20px 0" src="web-data/fig2.png" />
+        
       </div>
       <hr class="separator" />
       <h2 id="downloads">Downloads</h2>
